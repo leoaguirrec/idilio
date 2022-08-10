@@ -1,0 +1,190 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    background-image: url(/img/background/andrey-haimin-q2Fyzn-KJOQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header > picture {
+    margin-left: 13px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 30px;
+    border: 0;
+    color: #fff;
+    font-size: 17.5px;
+    border: 2px solid transparent;
+    color: #000;
+    background: transparent;
+    font-weight: 800;
+    line-height: 20px;
+    transition: background-color .1s ease-in-out;
+}
+
+li:link {
+    color: black;
+}
+
+li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+li:active {
+    background: black;
+    color: #2b2b2b;
+}
+
+main > picture {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+.grid {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 3px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5, 175px);
+    grid-template-areas: 
+    'cookies cookies'
+    'sandwich sandwich'
+    'bagel bagel'
+    'croissant croissant'
+    'donuts donuts'
+    ;
+}
+
+.grid > div {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: black;
+}
+
+.grid a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid div:hover {
+    opacity: 0.8;
+}
+
+.grid1 {
+    grid-area: cookies;
+}
+
+.grid1 a {
+    background-image: url(/img/product/cookies.jpg);
+}
+
+.grid2 {
+    grid-area: bagel;
+}
+
+.grid2 a {
+    background-image: url(/img/product/bagel.jpg);
+}
+
+.grid3 {
+    grid-area: croissant;
+}
+
+.grid3 a {
+    background-image: url(/img/product/croissant.jpg);
+}
+
+.grid4 {
+    grid-area: sandwich;
+}
+
+.grid4 a {
+    background-image: url(/img/product/sandwich.jpg);
+}
+
+.grid5 {
+    grid-area: donuts;
+}
+
+.grid5 a {
+    background-image: url(/img/product/donuts.jpg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    width: 100%;
+}
+
+@media (min-width: 450px) {
+    .grid {
+        grid-template-rows: repeat(4, 175px);
+        grid-template-areas: 
+            'cookies cookies'
+            'bagel sandwich'
+            'bagel croissant'
+            'donuts donuts'
+            ;
+    }
+    .header {
+        width: 100%;
+    }
+    li {
+        width: 100%;
+    }
+}
