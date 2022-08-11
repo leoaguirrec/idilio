@@ -12,7 +12,6 @@ main{
     background-size: cover;
     background-position: center;
     width: 100%;
-    max-width: 900px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -24,6 +23,10 @@ ul{
     align-items: center;
 }
 
+.container-button{
+    display: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -31,7 +34,6 @@ ul{
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -42,6 +44,7 @@ header > picture {
 
 nav {
     display: flex;
+    flex-direction: row;
 }
 
 li {
@@ -59,6 +62,7 @@ li {
     font-weight: 800;
     line-height: 20px;
     transition: background-color .1s ease-in-out;
+    flex-wrap: wrap;
 }
 
 li:link {
@@ -79,6 +83,8 @@ main > picture {
     display: flex;
     justify-content: center;
     margin: 3px;
+    height: 100px;
+    max-height: 100px;
 }
 
 .grid {
@@ -171,7 +177,7 @@ footer {
     width: 100%;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 560px) {
     .grid {
         grid-template-rows: repeat(4, 175px);
         grid-template-areas: 
@@ -181,10 +187,20 @@ footer {
             'donuts donuts'
             ;
     }
-    .header {
-        width: 100%;
+    header {
+        display: flex;
     }
-    li {
-        width: 100%;
+
+}
+
+@media (max-width: 780px) {
+    nav{
+        display: none;
+    }
+    .container-button {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
     }
 }
