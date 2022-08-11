@@ -1,9 +1,0 @@
-@media (max-width: 480px) {
-    body {
-    background-color: white;
-    width: auto;
-    }
-    .header {
-        width:100%;
-    }
-}

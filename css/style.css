@@ -7,7 +7,7 @@ body {
 }
 
 main{
-    background-image: url(/img/background/fondomadera.jpg);
+    background-image: url(./img/background/fondomadera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,7 +135,7 @@ main > picture {
 }
 
 .grid1 a {
-    background-image: url(/img/product/cookies.jpg);
+    background-image: url(./img/product/cookies.jpg);
 }
 
 .grid2 {
@@ -143,7 +143,7 @@ main > picture {
 }
 
 .grid2 a {
-    background-image: url(/img/product/bagel.jpg);
+    background-image: url(./img/product/bagel.jpg);
 }
 
 .grid3 {
@@ -151,7 +151,7 @@ main > picture {
 }
 
 .grid3 a {
-    background-image: url(/img/product/croissant.jpg);
+    background-image: url(./img/product/croissant.jpg);
 }
 
 .grid4 {
@@ -159,7 +159,7 @@ main > picture {
 }
 
 .grid4 a {
-    background-image: url(/img/product/sandwich.jpg);
+    background-image: url(./img/product/sandwich.jpg);
 }
 
 .grid5 {
@@ -167,7 +167,7 @@ main > picture {
 }
 
 .grid5 a {
-    background-image: url(/img/product/donuts.jpg);
+    background-image: url(./img/product/donuts.jpg);
 }
 
 footer {
