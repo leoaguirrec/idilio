@@ -14,10 +14,60 @@ video {
     -webkit-filter: grayscale(100%);
 }
 
-main {
-    width: 40%;
-    background: rgb(0, 0, 0, 0.5);
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
     color: #FFF;
-    padding: 20px;
-    margin: 5%;
+    border: 1px solid white;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    max-width: 900px;
+    grid-template-columns: repeat(3, 455px);
+    grid-template-rows: repeat(3, 170px);
+    grid-template-areas: 
+    ". . ."
+    ". picture ."
+    ". . .";
+}   
+
+.logoindex {
+    grid-area: picture;
+}
+
+main > picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 990px){
+    body {
+        background-color: violet;
+    }
 }

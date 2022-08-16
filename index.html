@@ -4,81 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idilio - Menu</title>
-    <link href="./img/coffee.png" rel="icon">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/hamburgers.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Roboto&display=swap" rel="stylesheet">
+    <title>Idilio Cafe</title>
+    <link href="/img/coffee.png" rel="icon">
+    <link href="/css/video.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <picture>
-            <img src="./img/logonegro.png" alt="logo">
-        </picture>
-        <div class="container-button">
-            <button class="hamburger hamburger--boring" type="button">
-                <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
+    <video src="/img/presentacion.mp4" autoplay loop poster="/img/background/presentacion.jpg"></video>
+    <header>
         <nav>
             <ul>
-                <li><a href="/index.html">Menu</a></li>
-                <li><a href="../pages/tienda.html">Tienda</a></li>
-                <li><a href="#">Sucursales</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="/pages/tienda.html">Tienda</a></li>
+                <li><a href="/pages/sucursales.html">Sucursales</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <picture>
-            <img src="./img/menu.png" alt="menu">
+        <picture class="logoindex">
+            <a href="/index.html"><img src="../img/logo.png" class="logo" alt="logo"></a>
         </picture>
-        <div class="grid">
-            <div class="grid1">
-                <a href="#">
-                    <span>Cookies</span>
-                </a>
-            </div>
-            <div class="grid2">
-                <a href="#">
-                    <span>Bagel</span>
-                </a>
-            </div>
-            <div  class="grid3">
-                <a href="#">
-                    <span>Croissant</span>
-                </a>
-            </div>
-            <div class="grid4">
-                <a href="#">
-                    <span>Sandwich</span>
-                </a>
-            </div>
-            <div  class="grid5">
-                <a href="#">
-                    <span>Donuts</span>
-                </a>
-            </div>
-        </div>
     </main>
     <footer>
-        <div>
-            <a href="#"><img src="./img/socialmedia/instagram.svg" alt="instagram"></a>
-            <a href="#"><img src="./img/socialmedia/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/socialmedia/whatsapp.svg" alt="whatsapp"></a>
-            <a href="#"><img src="./img/socialmedia/pinterest.svg" alt="pinterest"></a>
-            <a href="#"><img src="./img/socialmedia/linkedin.svg" alt="linkedin"></a>       
+        <div class="footerdiv">
+            <a href="#"><img src="../img/socialmedia/instagramwhite.svg" alt="instagram"></a>
+            <a href="#"><img src="../img/socialmedia/facebookwhite.svg" alt="facebook"></a>
+            <a href="#"><img src="../img/socialmedia/whatsappwhite.svg" alt="whatsapp"></a>
+            <a href="#"><img src="../img/socialmedia/pinterestwhite.svg" alt="pinterest"></a>
+            <a href="#"><img src="../img/socialmedia/linkedinwhite.svg" alt="linkedin"></a>       
         </div>
     </footer>
-    <script>
-        var hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function() {
-        hamburger.classList.toggle("is-active");
-        });
-    </script>
 </body>
 </html>
