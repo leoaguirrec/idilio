@@ -107,3 +107,11 @@ main {
     gap: 40px;
     margin-top: 35px;
 }
+
+footer {
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    justify-content: center;
+    margin-top: 3px;
+    width: 100%;
+}
