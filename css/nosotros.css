@@ -3,42 +3,141 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 body {
-    background-color:grey;
+    background-image: url(/img/background/fondomolienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: auto;
 }
 
 header {
     display: flex;
+    background-color: rgb(219, 219, 219);
+    justify-content: space-between;
+}
+
+.container-button{
+    display: none;
+}
+
+.ulnosotros {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-right: 20px;
 }
 
 nav {
     display: flex;
 }
 
-.container-button {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    width: 50px;
-    height: 50px;
+main{
+    display: grid;
+    grid-template-areas: 
+    "titulo . picture"
+    "parrafo1 . picture"
+    "parrafo2 . picture"
+    "parrafo3 . picture";
 }
 
-.box {
+.titulonosotros {
+    grid-area: titulo;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
-    border: 2px solid black;
-    box-shadow: 5px 5px  black
+    align-items: flex-start;
 }
 
+.titulonosotros > img {
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+}
+
+
+.parrafo1{
+    grid-area: parrafo1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+    display: flex;
+    align-items: flex-start;
+}
+
+.parrafo3 {
+    grid-area: parrafo3;
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider {
+    grid-area: picture;
+}
+
+
+.slider {
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 500px;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+footer {
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    justify-content: center;
+    margin-top: 3px;
+    width: 100%;
+}
+
+
+/*
 @media (min-width: 480px) {
     body {
         background-color: yellow;
     }
+    .container-button {
+        display: flex;
+        background-color: white;
+    }
+    
 }
 
 @media (min-width: 990px){

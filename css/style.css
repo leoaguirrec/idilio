@@ -33,6 +33,7 @@ ul{
 
 header {
     display: flex;
+    background-color: rgb(219, 219, 219);
     justify-content: space-between;
     width: 100%;
 }
@@ -70,7 +71,7 @@ li:link {
 }
 
 li:hover {
-    background-color: #000;
+    background-color: white;
     color: #fff;
 }
 
@@ -172,12 +173,13 @@ main > picture {
 
 footer {
     display: flex;
+    background-color: rgb(219, 219, 219);
     justify-content: center;
     margin-top: 3px;
     width: 100%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
     .grid {
         grid-template-rows: repeat(4, 175px);
         grid-template-areas: 
@@ -193,7 +195,7 @@ footer {
 
 }
 
-@media (max-width: 780px) {
+@media (max-width: 990px) {
     nav{
         display: none;
     }
