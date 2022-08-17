@@ -74,11 +74,6 @@ footer {
 }
 
 @media (max-width: 990px){
-
-    header {
-        background-color: aqua;
-    }
-
     main {
         grid-template-columns: auto;
         width: 100%;
