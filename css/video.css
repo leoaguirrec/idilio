@@ -22,6 +22,7 @@ header{
     max-width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -72,19 +73,18 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 480px) {
-    header {
-        display: flex;
-        justify-content: space-between;
+@media (min-width: 480px) {
+    ul {
+        padding-left: 0px;
     }
+
     main {
-        grid-template-columns: repeat(3,160px);
-        grid-template-areas: 
-        ". . ."
-        ". picture ."
-        ". . .";
-    }
+        grid-template-columns: auto;
+    } 
+}
 
 @media (max-width: 990px){
-
+    main {
+        grid-template-columns: repeat(3, 500px);
+    }
 }
