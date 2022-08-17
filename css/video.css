@@ -85,11 +85,8 @@ footer {
     }
 
     ul {
-        padding-left: 0px;
-    }
-
-    li {
-        
+        padding: 0%;
+        gap: 0%;
     }
 
     main {
