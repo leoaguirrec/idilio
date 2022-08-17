@@ -22,7 +22,6 @@ header{
     max-width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 ul {
@@ -74,14 +73,35 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    header{
+
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
     ul {
         padding-left: 0px;
     }
 
+    li {
+        
+    }
+
     main {
         grid-template-columns: auto;
-    } 
+    }
+
+    footer {
+        width: 100%;
+    }
 }
 
 @media (max-width: 990px){
+    main {
+    } 
 }
