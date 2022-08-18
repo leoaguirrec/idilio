@@ -127,22 +127,10 @@ footer {
     width: 100%;
 }
 
-
-/*
-@media (min-width: 480px) {
-    body {
-        background-color: yellow;
-    }
-    .container-button {
-        display: flex;
-        background-color: white;
-    }
+@media (max-width: 990px){
     
 }
 
-@media (min-width: 990px){
-    body {
-        background-color: violet;
-    }
-}
+@media (max-width: 480px){
 
+}
