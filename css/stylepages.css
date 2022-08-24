@@ -442,7 +442,10 @@ footer {
     }
 
     /* CSS - PAGE NOSOTROS */
-
+    .mainnosotros {
+        display: grid;
+        grid-template-areas: "titulo" "parrafo1" "parrafo2" "parrafo3" "picture";
+    }
 }
 
 
