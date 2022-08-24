@@ -403,6 +403,34 @@ footer {
 }
 
 
+@media (max-width: 990px) {
+    /* CSS - PAGE MENU */
+    nav{
+        display: none;
+    }
+    .container-button {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
+    }
+
+    /* CSS - PAGE SUCURSALES */
+    .mainsucursales{
+        display: grid;
+        grid-template-areas: 
+        'titulo'
+        'div1'
+        'div2'
+        'div3'
+        'div4';
+        justify-content: center;
+    }
+
+    .mainsucursales > div {
+        display: block;
+    }
+}
 
 
 
@@ -424,18 +452,8 @@ footer {
     header {
         display: flex;
     }
-
-}
-
-@media (max-width: 990px) {
-    /* CSS - PAGE MENU */
-    nav{
-        display: none;
-    }
-    .container-button {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        background-color: white;
+    /* CSS - PAGE SUCURSALES */
+    .mainsucursales{
+        background-color: aqua;
     }
 }
