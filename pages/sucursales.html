@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idilio - Sucursales</title>
     <link href="../img/coffee.png" rel="icon">
-    <link href="" rel="stylesheet">
     <link href="../css/stylepages.css" rel="stylesheet">
-    <link href="../img/coffee.png" rel="icon">
     <link rel="stylesheet" href="../css/hamburgers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body class="bodysucursales">
-    <header class="headersucursales">
+    <header class="header">
         <picture>
             <a href="../index.html"><img src="../img/logonegro.png" alt="logo"></a>
         </picture>
@@ -26,8 +24,8 @@
                 </span>
             </button>
         </div>
-        <nav class="navsucursales">
-            <ul class="ulsucursales">
+        <nav>
+            <ul>
                 <li><a href="../pages/menu.html" style="color: black;">Menu</a></li>
                 <li><a href="../pages/tienda.html" style="color: black;">Tienda</a></li>
                 <li><a href="../pages/sucursales.html" style="color: black;">Sucursales</a></li>
@@ -72,7 +70,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26313.577074358127!2d-58.52814492089843!3d-34.472522999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1b91edf7641%3A0x6a76c97f43a05647!2sBike%20%26%20Coffee%20Estaci%C3%B3n%20Barrancas%20TDC!5e0!3m2!1ses-419!2sar!4v1660687088601!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <footer class="footersucursales">
+    <footer>
         <div>
             <a href="#"><img src="../img/socialmedia/instagram.svg" alt="instagram"></a>
             <a href="#"><img src="../img/socialmedia/facebook.svg" alt="facebook"></a>
@@ -81,5 +79,11 @@
             <a href="#"><img src="../img/socialmedia/linkedin.svg" alt="linkedin"></a>       
         </div>
     </footer>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
+        });
+    </script>
 </body>
 </html>

@@ -223,6 +223,10 @@ footer {
     ;
 }
 
+.mainsucursales > div {
+    color: white;
+}
+
 .titulo {
     grid-area: titulo;
     display: flex;
@@ -301,27 +305,8 @@ footer {
     margin: auto;
 }
 
-.headernosotros {
-    display: flex;
-    background-color: rgb(219, 219, 219);
-    justify-content: space-between;
-}
-
 .container-button{
     display: none;
-}
-
-.ulnosotros {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    margin-right: 20px;
-}
-
-.navnosotros {
-    display: flex;
 }
 
 .mainnosotros{
@@ -331,6 +316,10 @@ footer {
     "parrafo1 . picture"
     "parrafo2 . picture"
     "parrafo3 . picture";
+}
+
+.mainnosotros > p {
+    color: white;
 }
 
 .titulonosotros {
