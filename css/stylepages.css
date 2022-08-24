@@ -19,7 +19,7 @@ body {
     padding-right: 15px;
 }
 
-ul{
+.header > ul{
     list-style: none;
     display: inline-flex;
     align-items: center;
@@ -40,7 +40,7 @@ header {
     width: 100%;
 }
 
-header > picture {
+.header > picture {
     margin-left: 13px;
     display: flex;
 }
@@ -68,16 +68,16 @@ li {
     flex-wrap: wrap;
 }
 
-li:link {
+.header li:link {
     color: black;
 }
 
-li:hover {
+.header li:hover {
     background-color: white;
     color: #fff;
 }
 
-li:active {
+.header li:active {
     background: black;
     color: #2b2b2b;
 }
@@ -373,10 +373,11 @@ footer {
     animation-timing-function: ease-in;
 }
 
-.slider li {
+.slider .lilinosotros {
     width: 100%;
     list-style: none;
 }
+
 
 .slider img {
     width: 100%;
@@ -426,10 +427,22 @@ footer {
         'div4';
         justify-content: center;
     }
-
     .mainsucursales > div {
         display: block;
     }
+    .titulo > img{ 
+        max-width: 300px;
+    }
+    .mainsucursales > div > h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .mainsucursales > div {
+        background-color: black;
+    }
+
+    /* CSS - PAGE NOSOTROS */
+
 }
 
 
