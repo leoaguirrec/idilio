@@ -7,30 +7,29 @@
     <title>Idilio - Sucursales</title>
     <link href="../img/coffee.png" rel="icon">
     <link href="../css/stylepages.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/hamburgers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body class="bodysucursales">
     <header class="header">
-        <picture>
-            <a href="../index.html"><img src="../img/logonegro.png" alt="logo"></a>
-        </picture>
-        <div class="container-button">
-            <button class="hamburger hamburger--boring" type="button">
-                <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../pages/menu.html" style="color: black;">Menu</a></li>
-                <li><a href="../pages/tienda.html" style="color: black;">Tienda</a></li>
-                <li><a href="../pages/sucursales.html" style="color: black;">Sucursales</a></li>
-                <li><a href="../pages/nosotros.html" style="color: black;">Nosotros</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="nav__container">
+                <picture>
+                    <a href="../index.html"><img src="../img/logonegro.png" alt="logo"></a>
+                </picture>
+                <label for="menu" class="nav__label">
+                    <img src="../img/menu.png" class="nav__img">
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+                <div class="nav__menu">
+                    <a href="../index.html" class="nav__item">Inicio</a>
+                    <a href="../pages/menu.html" class="nav__item">Menu</a>
+                    <a href="../pages/tienda.html" class="nav__item">Tienda</a>
+                    <a href="../pages/sucursales.html" class="nav__item">Sucursales</a>
+                    <a href="../pages/nosotros.html" class="nav__item">Nosotros</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="mainsucursales">
