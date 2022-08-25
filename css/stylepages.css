@@ -468,8 +468,4 @@ footer {
     header {
         display: flex;
     }
-    /* CSS - PAGE SUCURSALES */
-    .mainsucursales{
-        background-color: aqua;
-    }
 }
