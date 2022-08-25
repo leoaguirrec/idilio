@@ -1,0 +1,12 @@
+.contenedor {
+    background-color: red;
+    color: yellowgreen;
+    
+    .párrafo {
+        color: aqua;
+        font-size: 10px;
+        p {
+            color: blueviolet;
+        }
+    }
+}
