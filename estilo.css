@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.contenedor {
+  background-color: red;
+  color: yellowgreen; }
+  .contenedor .párrafo {
+    color: aqua;
+    font-size: 10px; }
+    .contenedor .párrafo p {
+      color: violet; }
