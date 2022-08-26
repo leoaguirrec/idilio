@@ -1,12 +1,505 @@
-.contenedor {
-    background-color: red;
-    color: yellowgreen;
-    
-    .párrafo {
-        color: aqua;
-        font-size: 10px;
-        p {
-            color: blueviolet;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* CSS - PAGE INDEX */
+    .videoindex {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+        -webkit-filter: grayscale(100%);
+    }
+
+    .headerindex {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        .ulindex {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0;
+            .liindex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 40px;
+                color: #FFF;
+                border: 1px solid white;
+            }
+        @media (max-width: 990px){
+            .ulindex {
+                gap: 0%;
+            }
         }
+        }
+    @media (max-width: 990px){
+        .headerindex {
+            display: flex;
+            justify-content: center;
+            .navindex {
+                width: 100%;
+            }
+        }
+    }
+    }
+
+    .mainindex {
+        display: grid;
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 800px 1fr;
+        grid-template-areas:
+            ". . ."
+            ". picture ."
+            ". . .";
+        .logoindex {
+            grid-area: picture;
+            .mainindex >picture {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    max-width: 100%;
+                }
+            }
+        }
+        @media (max-width: 990px){
+            .mainindex {
+                grid-template-columns: auto;
+                width: 100%;
+            }
+        }
+        @media (min-width: 480px){
+            .mainindex {
+                grid-auto-columns: auto;
+            }
+        }
+    }
+
+    .footerindex{
+        display: flex;
+        justify-content: center;
+        @media (min-width: 480px) {
+            .footerindex {
+                width: 100%;
+            }
+        }
+    }
+    /* CSS - PAGE MENU */
+    .header > ul{
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        .container-button{
+            display: none;
+            * {
+                box-sizing: border-box;
+                .nav{
+                    background-color: rgb(219, 219, 219);
+                    height: 80px;
+                    color: #000;
+                    .nav__container{
+                        display: flex;
+                        height: 100%;
+                        width: 90%;
+                        margin: 0 auto;
+                        justify-content: space-between;
+                        align-items: center;
+                        .nav__logo{
+                            font-size: 1.5em;
+                            font-weight: 900;
+                            .nav__menu{
+                                display: grid;
+                                grid-auto-flow: column;
+                                gap: 3em;
+                                .nav__item{
+                                    color: #000;
+                                    text-decoration: none;
+                                    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+                                    .nav__item:after{
+                                        content: "";
+                                        display: block;
+                                        background: #000;
+                                        width: 90%;
+                                        margin-top: 3px;
+                                        height: 3px;
+                                        clip-path: var(--clippy);
+                                        transition: clip-path .5s;
+                                        .nav__item:hover{
+                                            --clippy: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+                                            .nav__input:checked + .nav__menu{
+                                                background-color: rgb(219, 219, 219);
+                                                .nav__label, .nav__input{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        @media (max-width: 990px){
+                            .nav__menu{
+                                position: fixed;
+                                top: 80px;
+                                bottom: 0;
+                                background-color: rgb(219, 219, 219);
+                                width: 100%;
+                                left: 0;
+                                display: flex;
+                                justify-content: space-evenly;
+                                flex-direction: column;
+                                align-items: center;
+                                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                                transition: clip-path 1s ease-in-out;
+                                .nav__input:checked + .nav__menu{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                }
+                            }
+                        }
+                        }
+                    @media (max-width: 990px){
+                        .nav__label{
+                            display: block;
+                            cursor: pointer;
+                        }
+                    }
+                    }
+                }
+            }
+        @media (max-width: 990px){
+            .container-button {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                background-color: white;
+            }
+        }
+        }
+    }
+
+    .mainmenu > picture {
+        display: flex;
+        justify-content: center;
+    
+        height: 100px;
+        max-height: 100px;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 3px;
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(5, 175px);
+        grid-template-areas: 
+        'cookies cookies'
+        'sandwich sandwich'
+        'bagel bagel'
+        'croissant croissant'
+        'donuts donuts'
+        ;
+        .grid > div {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            background-color: black;
+            .grid a {
+                color: white;
+                font-size: 50px;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                .grid div:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        @media (min-width: 480px){
+            .grid {
+                grid-template-rows: repeat(4, 175px);
+                grid-template-areas: 
+                    'cookies cookies'
+                    'bagel sandwich'
+                    'bagel croissant'
+                    'donuts donuts'
+                    ;
+            }
+        }
+    }
+    .grid1 {
+        grid-area: cookies;
+        .grid1 a {
+            background-image: url(../img/product/cookies.jpg);
+        }
+    }
+    .grid2 {
+        grid-area: bagel;
+        .grid2 a {
+            background-image: url(../img/product/bagel.jpg);
+        }
+    }
+    .grid3 {
+        grid-area: croissant;
+        .grid3 a {
+            background-image: url(../img/product/croissant.jpg);
+        }
+    }
+    .grid4 {
+        grid-area: sandwich;
+        .grid4 a {
+            background-image: url(../img/product/sandwich.jpg);
+        }
+    }
+    .grid5 {
+        grid-area: donuts;
+        .grid5 a {
+            background-image: url(../img/product/donuts.jpg);
+        }
+    }
+    .footer {
+        display: flex;
+        background-color: rgb(219, 219, 219);
+        justify-content: center;
+        width: 100%;
+    }
+    /* CSS - PAGES SUCURSALES */
+    .headersucursales {
+        display: flex;
+        background-color: rgb(219, 219, 219);
+        justify-content: space-between;
+        .container-button{
+            display: none;
+            .navsucursales {
+                display: flex;
+                .ulsucursales {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 90px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .bodysucursales {
+        background-image: url(../img/background/fondobarra.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        .mainsucursales {
+            display: grid;
+            grid-template-areas: 
+            ". titulo ."
+            "div1 div1 div1"
+            "div2 div2 div2"
+            "div3 div3 div3"
+            "div4 div4 div4"
+            ;
+            .mainsucursales > div {
+                color: white;
+                .titulo {
+                    grid-area: titulo;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .titulo > img {
+                        width: 100%;
+                        max-width: 400px;
+                        .div1 {
+                            grid-area: div1;
+                            background-color: rgba(0, 0, 0, 0.50);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row;
+                            gap: 40px;
+                            margin-top: 5px;
+                            .div1 > img {
+                                justify-items: left;
+                            }
+                        .div2 {
+                            grid-area: div2;
+                            background-color: rgba(0, 0, 0, 0.50);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row-reverse;
+                            gap: 40px;
+                            margin-top: 35px;
+                        }
+                        .div3 {
+                            grid-area: div3;
+                            background-color: rgba(0, 0, 0, 0.50);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row;
+                            gap: 40px;
+                            margin-top: 35px;
+                        }
+                        .div4 {
+                            grid-area: div4;
+                            background-color: rgba(0, 0, 0, 0.50);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: row-reverse;
+                            gap: 40px;
+                            margin-top: 35px;
+                        }
+                        }
+                    }
+                }
+            @media (max-width: 990px){
+                .mainsucursales{
+                    display: grid;
+                    grid-template-areas: 
+                    'titulo'
+                    'div1'
+                    'div2'
+                    'div3'
+                    'div4';
+                    justify-content: center;
+                    .mainsucursales > div {
+                        display: block;
+                        .titulo > img{ 
+                            max-width: 300px;
+                        }
+                        .mainsucursales > div > h2 {
+                            display: flex;
+                            justify-content: center;
+                            .mainsucursales > div {
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+    .footersucursales {
+        display: flex;
+        background-color: rgb(219, 219, 219);
+        justify-content: center;
+        margin-top: 3px;
+        width: 100%;
+    }
+    /* CSS - PAGE NOSOTROS */
+    .container-button{
+        display: none;
+    }
+
+    .bodynosotros {
+        background-image: url(../img/background/fondomolienda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin: auto;
+        .mainnosotros{
+            display: grid;
+            grid-template-areas: 
+            "titulo . picture"
+            "parrafo1 . picture"
+            "parrafo2 . picture"
+            "parrafo3 . picture";
+            .mainnosotros > p {
+                color: white;
+            }
+        .titulonosotros {
+            grid-area: titulo;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            .titulonosotros > img {
+                display: flex;
+                width: 100%;
+                max-width: 320px;
+            }
+        .parrafo1{
+            grid-area: parrafo1;
+            display: flex;
+            align-items: flex-start;
+            }
+        .parrafo2 {
+            grid-area: parrafo2;
+            display: flex;
+            align-items: flex-start;
+        }
+        .parrafo3 {
+            grid-area: parrafo3;
+            display: flex;
+            align-items: flex-start;
+        }
+        .slider {
+            grid-area: picture;
+            .slider {
+                margin: auto;
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.7);
+                .slider ul {
+                    display: flex;
+                    padding: 0;
+                    width: 400%;
+                    animation: cambio 20s infinite alternate;
+                    animation-timing-function: ease-in;
+                    .slider .lilinosotros {
+                        width: 100%;
+                        list-style: none;
+                        .slider img {
+                            width: 100%;
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        @keyframes cambio {
+            0% { margin-left: 0; }
+            20% { margin-left: 0; }
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
+        }
+        }
+        @media (max-width: 990px) {
+            .mainnosotros {
+                display: grid;
+                grid-template-areas: "titulo" "parrafo1" "parrafo2" "parrafo3" "picture";
+            }
+        }
+        }
+    }
+    .footernosotros {
+        display: flex;
+        background-color: rgb(219, 219, 219);
+        justify-content: center;
+        margin-top: 3px;
+        width: 100%;
     }
 }

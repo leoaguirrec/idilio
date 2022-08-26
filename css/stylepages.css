@@ -5,6 +5,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
 /* CSS - PAGE INDEX */
 
 .videoindex {
@@ -155,7 +156,6 @@ body {
 .nav__label, .nav__input{
     display: none;
 }
-
 
 .mainmenu > picture {
     display: flex;
@@ -410,7 +410,6 @@ body {
     max-width: 320px;
 }
 
-
 .parrafo1{
     grid-area: parrafo1;
     display: flex;
@@ -433,7 +432,6 @@ body {
     grid-area: picture;
 }
 
-
 .slider {
     margin: auto;
     overflow: hidden;
@@ -452,7 +450,6 @@ body {
     width: 100%;
     list-style: none;
 }
-
 
 .slider img {
     width: 100%;
@@ -563,16 +560,8 @@ body {
     }
 }
 
-
-
-
-
-
-
 @media (min-width: 480px) {
     /* CSS - PAGE INDEX */
-
-
     .mainindex {
         grid-auto-columns: auto;
     }
