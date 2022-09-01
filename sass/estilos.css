@@ -58,7 +58,9 @@ body {
       body .mainindex .logoindex .mainindex > picture {
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        animation: fadeIn;
+        animation-duration: 2s; }
         body .mainindex .logoindex .mainindex > picture .logo {
           max-width: 100%; }
     @media (max-width: 990px) {

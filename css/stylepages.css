@@ -68,6 +68,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 .logo {
