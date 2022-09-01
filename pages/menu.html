@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idilio - Menu</title>
+    <title>Menu - Idilio</title>
+    <meta name="keywords" content="cafe, coffee, restaurant, restaurante, shop, tienda, cafeteria, coffee shop, snack bar, diner, buffet, lunch counter, coffee pot, milk bar, coffee house, coffee palace">
+    <meta name="description" content="">
     <link href="../img/coffee.png" rel="icon">
     <link href="../css/stylepages.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +18,7 @@
         <nav class="nav">
             <div class="nav__container">
                 <picture>
-                    <a href="../index.html"><img src="../img/logonegro.png" alt="logo"></a>
+                    <a href="../index.html"><img src="../img/logonegro.png" alt="logo" title="logo"></a>
                 </picture>
                 <label for="menu" class="nav__label">
                     <img src="../img/menu.png" class="nav__img">
@@ -24,19 +26,19 @@
                 <input type="checkbox" id="menu" class="nav__input">
                 <div class="nav__menu">
                     <a href="../index.html" class="nav__item">Inicio</a>
-                    <a href="../pages/menu.html" class="nav__item">Menu</a>
-                    <a href="../pages/tienda.html" class="nav__item">Tienda</a>
-                    <a href="../pages/sucursales.html" class="nav__item">Sucursales</a>
-                    <a href="../pages/nosotros.html" class="nav__item">Nosotros</a>
+                    <a href="./menu.html" class="nav__item">Menu</a>
+                    <a href="./tienda.html" class="nav__item">Tienda</a>
+                    <a href="./sucursales.html" class="nav__item">Sucursales</a>
+                    <a href="./nosotros.html" class="nav__item">Nosotros</a>
                 </div>
             </div>
         </nav>
     </header>
     <main class="mainmenu">
         <picture>
-            <img src="../img/menublack.png" alt="menu">
+            <img src="../img/menublack.png" alt="tituloMenu" title="tituloMenu">
         </picture>
-        <div class="grid">
+        <section class="grid">
             <div class="grid1">
                 <a href="#">
                     <span>Cookies</span>
@@ -62,22 +64,16 @@
                     <span>Donuts</span>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div>
-            <a href="#"><img src="../img/socialmedia/instagram.svg" alt="instagram"></a>
-            <a href="#"><img src="../img/socialmedia/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="../img/socialmedia/whatsapp.svg" alt="whatsapp"></a>
-            <a href="#"><img src="../img/socialmedia/pinterest.svg" alt="pinterest"></a>
-            <a href="#"><img src="../img/socialmedia/linkedin.svg" alt="linkedin"></a>       
+            <a href="#"><img src="../img/socialmedia/instagram.svg" alt="instagram" title="instagram"></a>
+            <a href="#"><img src="../img/socialmedia/facebook.svg" alt="facebook" title="facebook"></a>
+            <a href="#"><img src="../img/socialmedia/whatsapp.svg" alt="whatsapp" title="whatsapp"></a>
+            <a href="#"><img src="../img/socialmedia/pinterest.svg" alt="pinterest" title="pinterest"></a>
+            <a href="#"><img src="../img/socialmedia/linkedin.svg" alt="linkedin" title="linkedin"></a>       
         </div>
     </footer>
-    <script>
-        var hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function() {
-        hamburger.classList.toggle("is-active");
-        });
-    </script>
 </body>
 </html>

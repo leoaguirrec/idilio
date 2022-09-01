@@ -44,6 +44,10 @@ body {
     border: 1px solid white;
 }
 
+.liindex > a {
+    color: white;
+}
+
 .mainindex {
     display: grid;
     width: 100%;
@@ -316,17 +320,13 @@ body {
 
 .div1 {
     grid-area: div1;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 40px;
     margin-top: 5px;
-}
-
-.div1 > img {
-    justify-items: left;
 }
 
 .div2 {
@@ -529,6 +529,11 @@ body {
     }
 
     /* CSS - PAGE SUCURSALES */
+    .headersucursales {
+        display: flex;
+        background-color: rgb(219, 219, 219);
+        justify-content: space-between;
+    }
     .mainsucursales{
         display: grid;
         grid-template-areas: 

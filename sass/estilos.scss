@@ -1,3 +1,15 @@
+@mixin ubicacion {
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin parrafosNosotros {
+    display: flex;
+    align-items: flex-start;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -34,6 +46,9 @@ body{
                 height: 40px;
                 color: #FFF;
                 border: 1px solid white;
+                a {
+                    color: white;
+                }
             }
         @media (max-width: 990px){
             .ulindex {
@@ -328,46 +343,31 @@ body{
                         max-width: 400px;
                         .div1 {
                             grid-area: div1;
-                            background-color: rgba(0, 0, 0, 0.50);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include ubicacion;
                             flex-direction: row;
                             gap: 40px;
                             margin-top: 5px;
-                            .div1 > img {
-                                justify-items: left;
-                            }
+                        }
                         .div2 {
                             grid-area: div2;
-                            background-color: rgba(0, 0, 0, 0.50);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include ubicacion;
                             flex-direction: row-reverse;
                             gap: 40px;
                             margin-top: 35px;
                         }
                         .div3 {
                             grid-area: div3;
-                            background-color: rgba(0, 0, 0, 0.50);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include ubicacion;
                             flex-direction: row;
                             gap: 40px;
                             margin-top: 35px;
                         }
                         .div4 {
                             grid-area: div4;
-                            background-color: rgba(0, 0, 0, 0.50);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include ubicacion;
                             flex-direction: row-reverse;
                             gap: 40px;
                             margin-top: 35px;
-                        }
                         }
                     }
                 }
@@ -440,18 +440,15 @@ body{
             }
         .parrafo1{
             grid-area: parrafo1;
-            display: flex;
-            align-items: flex-start;
+            @include parrafosNosotros;
             }
         .parrafo2 {
             grid-area: parrafo2;
-            display: flex;
-            align-items: flex-start;
+            @include parrafosNosotros;
         }
         .parrafo3 {
             grid-area: parrafo3;
-            display: flex;
-            align-items: flex-start;
+            @include parrafosNosotros;
         }
         .slider {
             grid-area: picture;

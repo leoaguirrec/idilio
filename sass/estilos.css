@@ -35,6 +35,8 @@ body {
         height: 40px;
         color: #FFF;
         border: 1px solid white; }
+        body .headerindex .ulindex .liindex a {
+          color: white; }
       @media (max-width: 990px) {
         body .headerindex .ulindex .ulindex {
           gap: 0%; } }
@@ -249,35 +251,33 @@ body {
               flex-direction: row;
               gap: 40px;
               margin-top: 5px; }
-              body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div1 .div1 > img {
-                justify-items: left; }
-              body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div1 .div2 {
-                grid-area: div2;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row-reverse;
-                gap: 40px;
-                margin-top: 35px; }
-              body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div1 .div3 {
-                grid-area: div3;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                gap: 40px;
-                margin-top: 35px; }
-              body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div1 .div4 {
-                grid-area: div4;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row-reverse;
-                gap: 40px;
-                margin-top: 35px; }
+            body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div2 {
+              grid-area: div2;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row-reverse;
+              gap: 40px;
+              margin-top: 35px; }
+            body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div3 {
+              grid-area: div3;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              gap: 40px;
+              margin-top: 35px; }
+            body .bodysucursales .mainsucursales .mainsucursales > div .titulo .titulo > img .div4 {
+              grid-area: div4;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row-reverse;
+              gap: 40px;
+              margin-top: 35px; }
         @media (max-width: 990px) {
           body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales {
             display: grid;
