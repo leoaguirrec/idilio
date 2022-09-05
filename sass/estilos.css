@@ -297,7 +297,10 @@ body {
                 display: flex;
                 justify-content: center; }
                 body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales .mainsucursales > div .mainsucursales > div > h2 .mainsucursales > div {
-                  background-color: #000; } }
+                  background-color: #000; }
+              body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales .mainsucursales > div .mainsucursales > div > p {
+                display: flex;
+                justify-content: center; } }
   body .footersucursales {
     display: flex;
     background-color: #dbdbdb;

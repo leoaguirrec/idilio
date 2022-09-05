@@ -560,6 +560,12 @@ h1{
         display: flex;
         justify-content: center;
     }
+
+    .mainsucursales > div > p {
+        display: flex;
+        justify-content: center;
+    }
+
     .mainsucursales > div {
         background-color: black;
     }

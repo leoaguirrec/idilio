@@ -401,6 +401,10 @@ body {
                                     background-color: $color2;
                                 }
                             }
+                            .mainsucursales > div > p {
+                                display: flex;
+                                justify-content: center;
+                            }
                         }
                     }
                 }
