@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   /* CSS - PAGE INDEX */
   /* CSS - PAGE MENU */
   /* CSS - PAGES SUCURSALES */
@@ -33,10 +33,10 @@ body {
         justify-content: center;
         width: 100px;
         height: 40px;
-        color: #FFF;
-        border: 1px solid white; }
+        color: #fff;
+        border: 1px solid #fff; }
         body .headerindex .ulindex .liindex a {
-          color: white; }
+          color: #fff; }
       @media (max-width: 990px) {
         body .headerindex .ulindex .ulindex {
           gap: 0%; } }
@@ -52,9 +52,7 @@ body {
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 800px 1fr;
-    grid-template-areas: ". . ."
- ". picture ."
- ". . ."; }
+    grid-template-areas: ". . ." ". picture ." ". . ."; }
     body .mainindex .logoindex {
       grid-area: picture; }
       body .mainindex .logoindex .mainindex > picture {
@@ -116,12 +114,13 @@ body {
                     margin-top: 3px;
                     height: 3px;
                     clip-path: var(--clippy);
-                    transition: clip-path .5s; }
+                    transition: clip-path 0.5s; }
                     body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover {
                       --clippy: polygon(100% 0, 0 0, 0 100%, 100% 100%); }
                       body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover .nav__input:checked + .nav__menu {
                         background-color: #dbdbdb; }
-                        body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover .nav__input:checked + .nav__menu .nav__label, body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover .nav__input:checked + .nav__menu .nav__input {
+                        body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover .nav__input:checked + .nav__menu .nav__label,
+                        body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu .nav__item .nav__item:after .nav__item:hover .nav__input:checked + .nav__menu .nav__input {
                           display: none; }
               @media (max-width: 990px) {
                 body .header > ul .container-button * .nav .nav__container .nav__logo .nav__menu {
@@ -148,7 +147,7 @@ body {
           display: flex;
           justify-content: end;
           align-items: center;
-          background-color: white; } }
+          background-color: #fff; } }
   body .mainmenu > picture {
     display: flex;
     justify-content: center;
@@ -163,18 +162,14 @@ body {
     gap: 2px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(5, 175px);
-    grid-template-areas: 'cookies cookies'
- 'sandwich sandwich'
- 'bagel bagel'
- 'croissant croissant'
- 'donuts donuts'; }
+    grid-template-areas: "cookies cookies" "sandwich sandwich" "bagel bagel" "croissant croissant" "donuts donuts"; }
     body .grid .grid > div {
       display: flex;
       align-items: stretch;
       justify-content: center;
-      background-color: black; }
+      background-color: #000; }
       body .grid .grid > div .grid a {
-        color: white;
+        color: #fff;
         font-size: 50px;
         text-decoration: none;
         text-transform: uppercase;
@@ -190,10 +185,7 @@ body {
     @media (min-width: 480px) {
       body .grid .grid {
         grid-template-rows: repeat(4, 175px);
-        grid-template-areas: 'cookies cookies'
- 'bagel sandwich'
- 'bagel croissant'
- 'donuts donuts'; } }
+        grid-template-areas: "cookies cookies" "bagel sandwich" "bagel croissant" "donuts donuts"; } }
   body .grid1 {
     grid-area: cookies; }
     body .grid1 .grid1 a {
@@ -242,13 +234,9 @@ body {
     width: 100%; }
     body .bodysucursales .mainsucursales {
       display: grid;
-      grid-template-areas: ". titulo ."
- "div1 div1 div1"
- "div2 div2 div2"
- "div3 div3 div3"
- "div4 div4 div4"; }
+      grid-template-areas: ". titulo ." "div1 div1 div1" "div2 div2 div2" "div3 div3 div3" "div4 div4 div4"; }
       body .bodysucursales .mainsucursales .mainsucursales > div {
-        color: white; }
+        color: #fff; }
         body .bodysucursales .mainsucursales .mainsucursales > div .titulo {
           grid-area: titulo;
           display: flex;
@@ -296,11 +284,7 @@ body {
         @media (max-width: 990px) {
           body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales {
             display: grid;
-            grid-template-areas: 'titulo'
- 'div1'
- 'div2'
- 'div3'
- 'div4';
+            grid-template-areas: "titulo" "div1" "div2" "div3" "div4";
             justify-content: center; }
             body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales .mainsucursales > div {
               display: block; }
@@ -310,7 +294,7 @@ body {
                 display: flex;
                 justify-content: center; }
                 body .bodysucursales .mainsucursales .mainsucursales > div .mainsucursales .mainsucursales > div .mainsucursales > div > h2 .mainsucursales > div {
-                  background-color: black; } }
+                  background-color: #000; } }
   body .footersucursales {
     display: flex;
     background-color: #dbdbdb;
@@ -328,12 +312,9 @@ body {
     margin: auto; }
     body .bodynosotros .mainnosotros {
       display: grid;
-      grid-template-areas: "titulo . picture"
- "parrafo1 . picture"
- "parrafo2 . picture"
- "parrafo3 . picture"; }
+      grid-template-areas: "titulo . picture" "parrafo1 . picture" "parrafo2 . picture" "parrafo3 . picture"; }
       body .bodynosotros .mainnosotros .mainnosotros > p {
-        color: white; }
+        color: #fff; }
       body .bodynosotros .mainnosotros .titulonosotros {
         grid-area: titulo;
         display: flex;
