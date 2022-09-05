@@ -1,5 +1,11 @@
+$color1: #FFF;
+$color2: #000;
+$backgroundcolor1: rgba(0, 0, 0, 0.50);
+$backgroundcolor2: rgb(219, 219, 219);
+
+
 @mixin ubicacion {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: $backgroundcolor1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +50,10 @@ body{
                 justify-content: center;
                 width: 100px;
                 height: 40px;
-                color: #FFF;
-                border: 1px solid white;
+                color: $color1;
+                border: 1px solid $color1;
                 a {
-                    color: white;
+                    color: $color1;
                 }
             }
         @media (max-width: 990px){
@@ -122,9 +128,9 @@ body{
             * {
                 box-sizing: border-box;
                 .nav{
-                    background-color: rgb(219, 219, 219);
+                    background-color:$backgroundcolor2;
                     height: 80px;
-                    color: #000;
+                    color: $color2;
                     .nav__container{
                         display: flex;
                         height: 100%;
@@ -140,13 +146,13 @@ body{
                                 grid-auto-flow: column;
                                 gap: 3em;
                                 .nav__item{
-                                    color: #000;
+                                    color: $color2;
                                     text-decoration: none;
                                     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
                                     .nav__item:after{
                                         content: "";
                                         display: block;
-                                        background: #000;
+                                        background: $color2;
                                         width: 90%;
                                         margin-top: 3px;
                                         height: 3px;
@@ -155,7 +161,7 @@ body{
                                         .nav__item:hover{
                                             --clippy: polygon(100% 0, 0 0, 0 100%, 100% 100%);
                                             .nav__input:checked + .nav__menu{
-                                                background-color: rgb(219, 219, 219);
+                                                background-color: $backgroundcolor2;
                                                 .nav__label, .nav__input{
                                                     display: none;
                                                 }
@@ -169,7 +175,7 @@ body{
                                 position: fixed;
                                 top: 80px;
                                 bottom: 0;
-                                background-color: rgb(219, 219, 219);
+                                background-color: $backgroundcolor2;
                                 width: 100%;
                                 left: 0;
                                 display: flex;
@@ -198,7 +204,7 @@ body{
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                background-color: white;
+                background-color: $color1;
             }
         }
         }
@@ -232,9 +238,9 @@ body{
             display: flex;
             align-items: stretch;
             justify-content: center;
-            background-color: black;
+            background-color: $color2;
             .grid a {
-                color: white;
+                color: $color1;
                 font-size: 50px;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -294,14 +300,14 @@ body{
     }
     .footer {
         display: flex;
-        background-color: rgb(219, 219, 219);
+        background-color: $backgroundcolor2;
         justify-content: center;
         width: 100%;
     }
     /* CSS - PAGES SUCURSALES */
     .headersucursales {
         display: flex;
-        background-color: rgb(219, 219, 219);
+        background-color: $backgroundcolor2;
         justify-content: space-between;
         .container-button{
             display: none;
@@ -334,7 +340,7 @@ body{
             "div4 div4 div4"
             ;
             .mainsucursales > div {
-                color: white;
+                color: $color1;
                 .titulo {
                     grid-area: titulo;
                     display: flex;
@@ -392,7 +398,7 @@ body{
                             display: flex;
                             justify-content: center;
                             .mainsucursales > div {
-                                background-color: black;
+                                background-color: $color2;
                             }
                         }
                     }
@@ -403,7 +409,7 @@ body{
     }
     .footersucursales {
         display: flex;
-        background-color: rgb(219, 219, 219);
+        background-color: $backgroundcolor2;
         justify-content: center;
         margin-top: 3px;
         width: 100%;
@@ -428,7 +434,7 @@ body{
             "parrafo2 . picture"
             "parrafo3 . picture";
             .mainnosotros > p {
-                color: white;
+                color: $color1;
             }
         .titulonosotros {
             grid-area: titulo;
@@ -496,7 +502,7 @@ body{
     }
     .footernosotros {
         display: flex;
-        background-color: rgb(219, 219, 219);
+        background-color: $backgroundcolor2;
         justify-content: center;
         margin-top: 3px;
         width: 100%;
