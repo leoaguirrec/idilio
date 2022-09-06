@@ -94,8 +94,6 @@ h1{
     background-position: center;
     width: 100%;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .header > ul{
@@ -170,39 +168,31 @@ h1{
 .mainmenu > picture {
     display: flex;
     justify-content: center;
-
     height: 100px;
     max-height: 100px;
 }
 
-.grid {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 3px;
+.parent {
     display: grid;
-    gap: 2px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(5, 175px);
-    grid-template-areas: 
-    'cookies cookies'
-    'sandwich sandwich'
-    'bagel bagel'
-    'croissant croissant'
-    'donuts donuts'
-    ;
+    width: 100%;
+    margin-top: 3px;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(8, 197px);
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
 }
 
-.grid > div {
+.parent > div {
     display: flex;
     align-items: stretch;
     justify-content: center;
     background-color: black;
 }
 
-.grid a {
+.parent a {
     color: white;
-    font-size: 50px;
+    font-size: 4.5vh;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
@@ -214,48 +204,162 @@ h1{
     background-position: center;
 }
 
-.grid div:hover {
+.parent div:hover {
     opacity: 0.8;
 }
 
-.grid1 {
-    grid-area: cookies;
+
+.div1menu {
+    grid-area: 1 / 4 / 3 / 5;
+    background-image: url(../img/product/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid1 a {
-    background-image: url(../img/product/cookies.jpg);
+.div2menu {
+    grid-area: 1 / 2 / 2 / 4;
+    background-image: url(../img/product/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid2 {
-    grid-area: bagel;
+.div3menu {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../img/product/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid2 a {
-    background-image: url(../img/product/bagel.jpg);
+.div4menu {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(../img/product/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid3 {
-    grid-area: croissant;
+.div5menu {
+    grid-area: 3 / 3 / 5 / 4;
+    background-image: url(../img/product/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid3 a {
-    background-image: url(../img/product/croissant.jpg);
+.div6menu {
+    grid-area: 5 / 3 / 6 / 5;
+    background-image: url(../img/product/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid4 {
-    grid-area: sandwich;
+.div7menu {
+    grid-area: 4 / 4 / 5 / 5;
+    background-image: url(../img/product/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid4 a {
-    background-image: url(../img/product/sandwich.jpg);
+.div8menu {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url(../img/product/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid5 {
-    grid-area: donuts;
+.div9menu {
+    grid-area: 4 / 2 / 6 / 3;
+    background-image: url(../img/product/9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
-.grid5 a {
-    background-image: url(../img/product/donuts.jpg);
+.div10menu {
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url(../img/product/10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div11menu {
+    grid-area: 6 / 2 / 7 / 3;
+    background-image: url(../img/product/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div12menu {
+    grid-area: 7 / 2 / 8 / 4;
+    background-image: url(../img/product/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div13menu {
+    grid-area: 7 / 4 / 9 / 5;
+    background-image: url(../img/product/13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div14menu {
+    grid-area: 6 / 3 / 7 / 4;
+    background-image: url(../img/product/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div15menu {
+    grid-area: 6 / 4 / 7 / 5;
+    background-image: url(../img/product/15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div16menu {
+    grid-area: 8 / 2 / 9 / 3;
+    background-image: url(../img/product/16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.div17menu {
+    grid-area: 8 / 3 / 9 / 4;
+    background-image: url(../img/product/17.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
 }
 
 .footer {
@@ -534,6 +638,20 @@ h1{
         background-color: white;
     }
 
+    .parent {
+        display: block;
+    }
+    .parent a {
+        font-size: 2.5vh;
+    }
+
+    .parent div {
+        height: 60vh;
+        margin-bottom: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     /* CSS - PAGE SUCURSALES */
     .headersucursales {
         display: flex;
@@ -577,6 +695,7 @@ h1{
     }
 }
 
+
 @media (min-width: 480px) {
     /* CSS - PAGE INDEX */
     .mainindex {
@@ -588,13 +707,25 @@ h1{
     }
 
     /* CSS - PAGE MENU */
-    .grid {
-        grid-template-rows: repeat(4, 175px);
-        grid-template-areas: 
-            'cookies cookies'
-            'bagel sandwich'
-            'bagel croissant'
-            'donuts donuts'
-            ;
+    
+    .parent {
+        display: grid;
+        width: 100%;
+        margin-top: 3px;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(8, 255px);
+        grid-column-gap: 7px;
+        grid-row-gap: 7px;
+    }
+
+    .parent a {
+        font-size: 2.5vh;
+    }
+
+    .parent div {
+        height: 60vh;   
+        margin-bottom: 10px;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
