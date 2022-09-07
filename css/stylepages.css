@@ -293,7 +293,7 @@ h1{
 
 .div10menu {
     grid-area: 3 / 2 / 4 / 3;
-    background-image: url(../img/product/10.jpg);
+    background-image: url(../img/product/14.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -329,7 +329,7 @@ h1{
 
 .div14menu {
     grid-area: 6 / 3 / 7 / 4;
-    background-image: url(../img/product/14.jpg);
+    background-image: url(../img/product/10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -338,7 +338,7 @@ h1{
 
 .div15menu {
     grid-area: 6 / 4 / 7 / 5;
-    background-image: url(../img/product/15.jpg);
+    background-image: url(../img/product/16.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -347,7 +347,7 @@ h1{
 
 .div16menu {
     grid-area: 8 / 2 / 9 / 3;
-    background-image: url(../img/product/16.jpg);
+    background-image: url(../img/product/15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -431,7 +431,7 @@ h1{
 
 .div1 {
     grid-area: div1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,7 +442,7 @@ h1{
 
 .div2 {
     grid-area: div2;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ h1{
 
 .div3 {
     grid-area: div3;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,7 +464,7 @@ h1{
 
 .div4 {
     grid-area: div4;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -701,7 +701,7 @@ h1{
         font-size: 3vh;
     }    
     .parent div {
-        height: 30vh;
+        height: 27vh;
         margin-bottom: 10px;
         max-width: 100%;
         max-height: 100%;
