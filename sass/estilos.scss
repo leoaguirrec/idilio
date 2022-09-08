@@ -14,9 +14,6 @@ $backgroundcolor2: rgb(219, 219, 219);
     display: flex;
     align-items: flex-start;
 }
-h1 {
-    display: none;
-}
 
 body {
     margin: 0;
@@ -104,7 +101,7 @@ body {
                 width: 100%;
             }
         }
-        @media (min-width: 480px) {
+        @media (max-width: 480px) {
             .mainindex {
                 grid-auto-columns: auto;
             }
@@ -114,7 +111,7 @@ body {
     .footerindex {
         display: flex;
         justify-content: center;
-        @media (min-width: 480px) {
+        @media (max-width: 480px) {
             .footerindex {
                 width: 100%;
             }
@@ -216,34 +213,35 @@ body {
     .mainmenu > picture {
         display: flex;
         justify-content: center;
-
         height: 100px;
         max-height: 100px;
     }
 
-    .grid {
-        width: 100%;
-        max-width: 900px;
-        margin: auto;
-        margin-top: 3px;
+    .mainmenu > h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parent {
         display: grid;
-        gap: 2px;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(5, 175px);
-        grid-template-areas:
-            "cookies cookies"
-            "sandwich sandwich"
-            "bagel bagel"
-            "croissant croissant"
-            "donuts donuts";
-        .grid > div {
+        width: 100%;
+        margin-top: 3px;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(8, 197px);
+        grid-column-gap: 7px;
+        grid-row-gap: 7px;
+        div {
             display: flex;
             align-items: stretch;
             justify-content: center;
-            background-color: $color2;
-            .grid a {
-                color: $color1;
-                font-size: 50px;
+            background-color: black;
+            height: 100%;   
+            margin-bottom: 10px;
+            max-width: 100%;
+            a {
+                color: white;
+                text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
                 width: 100%;
@@ -253,52 +251,183 @@ body {
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                .grid div:hover {
-                    opacity: 0.8;
+            }
+            span {
+                font-size: 35px;
+            }
+            div:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .div1menu {
+            grid-area: 1 / 4 / 3 / 5;
+            background-image: url(../img/product/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div2menu {
+            grid-area: 1 / 2 / 2 / 4;
+            background-image: url(../img/product/2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div3menu {
+            grid-area: 2 / 2 / 3 / 3;
+            background-image: url(../img/product/3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div4menu {
+            grid-area: 2 / 3 / 3 / 4;
+            background-image: url(../img/product/4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div5menu {
+            grid-area: 3 / 3 / 5 / 4;
+            background-image: url(../img/product/5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div6menu {
+            grid-area: 5 / 3 / 6 / 5;
+            background-image: url(../img/product/6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div7menu {
+            grid-area: 4 / 4 / 5 / 5;
+            background-image: url(../img/product/7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div8menu {
+            grid-area: 3 / 4 / 4 / 5;
+            background-image: url(../img/product/8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div9menu {
+            grid-area: 4 / 2 / 6 / 3;
+            background-image: url(../img/product/9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div10menu {
+            grid-area: 3 / 2 / 4 / 3;
+            background-image: url(../img/product/14.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div11menu {
+            grid-area: 6 / 2 / 7 / 3;
+            background-image: url(../img/product/11.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div12menu {
+            grid-area: 7 / 2 / 8 / 4;
+            background-image: url(../img/product/12.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div13menu {
+            grid-area: 7 / 4 / 9 / 5;
+            background-image: url(../img/product/13.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div14menu {
+            grid-area: 6 / 3 / 7 / 4;
+            background-image: url(../img/product/10.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div15menu {
+            grid-area: 6 / 4 / 7 / 5;
+            background-image: url(../img/product/16.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div16menu {
+            grid-area: 8 / 2 / 9 / 3;
+            background-image: url(../img/product/15.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+        
+        .div17menu {
+            grid-area: 8 / 3 / 9 / 4;
+            background-image: url(../img/product/17.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+
+        @media (max-width: 480px) {
+            .parent {
+                display: block;
+                a {
+                    font-size: 3vh;
+                }    
+                div {
+                    height: 27vh;
+                    margin-bottom: 10px;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
-        }
-        @media (min-width: 480px) {
-            .grid {
-                grid-template-rows: repeat(4, 175px);
-                grid-template-areas:
-                    "cookies cookies"
-                    "bagel sandwich"
-                    "bagel croissant"
-                    "donuts donuts";
-            }
-        }
     }
-    .grid1 {
-        grid-area: cookies;
-        .grid1 a {
-            background-image: url(../img/product/cookies.jpg);
-        }
-    }
-    .grid2 {
-        grid-area: bagel;
-        .grid2 a {
-            background-image: url(../img/product/bagel.jpg);
-        }
-    }
-    .grid3 {
-        grid-area: croissant;
-        .grid3 a {
-            background-image: url(../img/product/croissant.jpg);
-        }
-    }
-    .grid4 {
-        grid-area: sandwich;
-        .grid4 a {
-            background-image: url(../img/product/sandwich.jpg);
-        }
-    }
-    .grid5 {
-        grid-area: donuts;
-        .grid5 a {
-            background-image: url(../img/product/donuts.jpg);
-        }
-    }
+
     .footer {
         display: flex;
         background-color: $backgroundcolor2;
@@ -335,6 +464,7 @@ body {
             display: grid;
             grid-template-areas:
                 ". titulo ."
+                ". h1 ."
                 "div1 div1 div1"
                 "div2 div2 div2"
                 "div3 div3 div3"
@@ -349,37 +479,48 @@ body {
                     .titulo > img {
                         width: 100%;
                         max-width: 400px;
-                        .div1 {
-                            grid-area: div1;
-                            @include ubicacion;
-                            flex-direction: row;
-                            gap: 40px;
-                            margin-top: 5px;
                         }
-                        .div2 {
-                            grid-area: div2;
-                            @include ubicacion;
-                            flex-direction: row-reverse;
-                            gap: 40px;
-                            margin-top: 35px;
-                        }
-                        .div3 {
-                            grid-area: div3;
-                            @include ubicacion;
-                            flex-direction: row;
-                            gap: 40px;
-                            margin-top: 35px;
-                        }
-                        .div4 {
-                            grid-area: div4;
-                            @include ubicacion;
-                            flex-direction: row-reverse;
-                            gap: 40px;
-                            margin-top: 35px;
-                        }
-                    }
+                .div1 {
+                    grid-area: div1;
+                    @include ubicacion;
+                    flex-direction: row;
+                    gap: 40px;
+                    margin-top: 5px;
+                }
+                .div2 {
+                    grid-area: div2;
+                    @include ubicacion;
+                    flex-direction: row-reverse;
+                    gap: 40px;
+                    margin-top: 35px;
+                }
+                .div3 {
+                    grid-area: div3;
+                    @include ubicacion;
+                    flex-direction: row;
+                    gap: 40px;
+                    margin-top: 35px;
+                }
+                .div4 {
+                    grid-area: div4;
+                    @include ubicacion;
+                    flex-direction: row-reverse;
+                    gap: 40px;
+                    margin-top: 35px;
+                }
+                }
+                .h1sucursales{
+                    grid-area: h1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 @media (max-width: 990px) {
+                    .headersucursales {
+                        display: flex;
+                        background-color: rgb(219, 219, 219);
+                        justify-content: space-between;
+                    }
                     .mainsucursales {
                         display: grid;
                         grid-template-areas:
@@ -434,11 +575,19 @@ body {
             display: grid;
             grid-template-areas:
                 "titulo . picture"
+                "h1 . picture"
                 "parrafo1 . picture"
                 "parrafo2 . picture"
                 "parrafo3 . picture";
             .mainnosotros > p {
                 color: $color1;
+            }
+            .h1nosotros {
+                grid-area: h1;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
             }
             .titulonosotros {
                 grid-area: titulo;
@@ -515,7 +664,7 @@ body {
             @media (max-width: 990px) {
                 .mainnosotros {
                     display: grid;
-                    grid-template-areas: "titulo" "parrafo1" "parrafo2" "parrafo3" "picture";
+                    grid-template-areas: "titulo" "h1"  "parrafo1" "parrafo2" "parrafo3" "picture";
                 }
             }
         }
